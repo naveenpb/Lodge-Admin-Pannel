@@ -1,18 +1,24 @@
-## Getting Started
+# Lodge Admin Panel
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
+A simple Java Swing-based Lodge Admin Panel for managing room availability, customer check-ins/check-outs, and billing. Uses JDBC for database integration with SQL Server.
 
-## Folder Structure
+## Features
+- Room availability tracking
+- Customer check-in/out
+- Automated bill generation
+- SQL Server database integration
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Setup
+1. Clone the repo:
+    ```bash
+    git clone https://github.com/naveenpb/Lodge-Admin-Pannel
+    cd Project2
+    ```
+2. Configure the `hotelmanagement` database in SQL Server.
+3. Update connection settings in `DatabaseConnection.java`.
+4. Compile and run:
+    ```bash
+    javac src/com/lodge/AdminPanel.java
+    java src/com/lodge/AdminPanel
+    ```
